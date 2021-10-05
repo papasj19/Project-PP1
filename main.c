@@ -18,8 +18,6 @@ void inputMainMenu(){
 	the first option will allow the user to load a file into     our variables 
 	the second allows the user to enter manually 
 	Both options will redirect the user to a different menu
-
-we dont have to do files it sounds hard and im lazy 
 */
 void inputMenu(){
 	int userinputmenu = 0; 
@@ -38,13 +36,40 @@ void inputMenu(){
 			printf("\nPlease select option 1 or 2\n");
 		}
 	}
-}while(userinputmenu != 2 && userinputmenu != 1);
-	}
+	}while(userinputmenu != 2 && userinputmenu != 1);
+}
+
+typedef struct {
+	int ID; 
+	char name; 
+	//coord 1
+	//coord 2 upl 
+	//coord 1 lr 
+	//coord 2 lr 
+
+
+}Region; 
+
+void addRegion(){
+/*
+Creates a new region. Each region is defined by ID, name, upper-left and lower-right corners coordinates. All regions will be rectangular.
+*/
+	Region tmp_region; 
+	printf("Enter the ID: ");
+	scanf("%d", &tmp_region.ID);
+	printf("Enter the name: ");
+	scanf("%s", &tmp_region.name); 
+	//printf("Enter the upper-left corners coordinates: ");
+	//how should we stoer the coord 
+	//printf("Enter the lower-right corners coordinates: ");
+}
 
 int main (void){
 
-	firstMenu();
-	inputMenu();
+	//firstMenu();
+	//inputMenu();
 	
+	addRegion(); 
+
   return 0;
 }
